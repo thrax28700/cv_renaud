@@ -1,0 +1,254 @@
+/* 🌈 Polices et couleurs */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:wght@400;600&display=swap');
+
+:root {
+  --turquoise: #00bcd4;
+  --white: #ffffff;
+  --gray: #f5f5f5;
+  --light-gray: #eeeeee;
+  --hover-bg: #e3e3e3;
+  --text: #333333;
+}
+
+/* 🔧 Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: var(--gray);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* 🧱 Conteneur principal */
+.container {
+  max-width: 1160px;
+  width: 100%;
+  background-color: var(--white);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🧢 En-tête */
+.header {
+  background-color: var(--turquoise);
+  color: var(--white);
+  padding: 40px;
+}
+
+.header-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--white);
+  flex-shrink: 0;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.photo img:hover {
+  transform: scale(1.05);
+}
+
+.header-info {
+  flex: 1;
+  text-align: center;
+}
+
+.header-info h1,
+.header-info h2 {
+  font-family: 'Abril Fatface', cursive;
+}
+
+.header-info h1 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
+}
+
+.header-info h2 {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.info-columns {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.info-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.info-column p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+/* 🔗 Liens */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header a {
+  color: var(--white);
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+/* 📄 Mise en page du CV */
+.cv-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.left-column {
+  width: 35%;
+  background-color: var(--light-gray);
+  padding: 30px;
+  vertical-align: top;
+}
+
+.right-column {
+  width: 65%;
+  background-color: var(--white);
+  padding: 30px;
+  vertical-align: top;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+section h3 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 1.4em;
+  margin-bottom: 15px;
+  color: var(--turquoise);
+}
+
+/* 📌 Listes */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 8px;
+  font-size: 1em;
+}
+
+/* ⭐ Étoiles de compétence */
+.skills .stars {
+  color: #17abb3;
+  margin-left: 10px;
+}
+
+/* 🧠 Texte du profil */
+.profil-text {
+  text-align: justify;
+  text-indent: 30px;
+  line-height: 1.6;
+}
+
+/* ✨ Effets sur Formations et Expériences */
+.hover-list li {
+  position: relative;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease, border-left 0.3s ease;
+  border-left: 4px solid transparent;
+}
+
+.hover-list li:hover {
+  background-color: var(--hover-bg);
+  border-left: 4px solid var(--turquoise);
+}
+
+/* 🧷 Pied de page */
+.footer {
+  background-color: var(--turquoise);
+  text-align: center;
+  padding: 20px;
+  font-size: 0.95em;
+  color: var(--white);
+}
+
+/* 🌐 Réseaux sociaux */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.social-icon {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .header-top {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .info-columns {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cv-table {
+    display: block;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+    padding: 20px;
+  }
+}
