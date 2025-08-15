@@ -1,16 +1,12 @@
-# CV HTML/CSS – Renaud Vaillant
+# CV en HTML & CSS – Renaud Vaillant
 
-Ce projet est un devoir réalisé dans le cadre du cours de développement web.  
-Il présente un CV codé en HTML et stylisé avec CSS.
+Ce projet est une page de CV interactive réalisée en HTML et CSS dans le cadre du devoir n°3.
 
-## Structure du projet
+## 🧰 Technologies utilisées
 
-- `src/index.html` : page principale du CV
-- `css/styles.css` : feuille de style
-- `assets/img/` : images utilisées
-- `assets/fonts/` : polices personnalisées
-- `.git/` : historique Git
+- HTML5
+- CSS3
+- Flexbox / Grid
+- Responsive design
 
-## Auteur
-
-Renaud Vaillant
+## 📁 Structure du projet
